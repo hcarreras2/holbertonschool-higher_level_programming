@@ -5,4 +5,4 @@ def print_list_integer(my_list=[]):
 numbers = 0
     for line in my_list[0]:
         numbers = numbers + 1
-        print(f"{}"line.format)
+        print("{}}".format(line))
