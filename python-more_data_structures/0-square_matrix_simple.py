@@ -2,8 +2,6 @@
 
 def square_matrix_simple(matrix=[]):
 
-    copiedmatrix = matrix.copy()
+    new_matrix = [[element**2 for element in row] for row in matrix]
 
-    for i in copiedmatrix:
-        return i**2
-    return matrix
+    return new_matrix, matrix
