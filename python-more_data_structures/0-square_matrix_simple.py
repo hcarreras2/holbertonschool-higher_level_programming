@@ -6,6 +6,4 @@ def square_matrix_simple(matrix=[]):
 
     for i in copiedmatrix:
         return i**2
-
-
-return copiedmatrix
+    return matrix
