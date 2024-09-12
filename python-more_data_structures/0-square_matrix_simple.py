@@ -5,7 +5,7 @@ def square_matrix_simple(matrix=[]):
     copiedmatrix = matrix.copy()
 
     for i in copiedmatrix:
-        return i**
+        return i**2
 
 
 return copiedmatrix
