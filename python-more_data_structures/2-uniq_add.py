@@ -6,4 +6,4 @@ def uniq_add(my_list=[]):
     my_set = set()
     for i in my_list:
         my_set.add(i)
-    return my_set
+    return sum(my_set)
