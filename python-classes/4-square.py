@@ -7,7 +7,7 @@ class Square:
     """This is a class named square"""
     def __init__(self, size=0):
         """This is a constructor method
-        
+
         Args:
         size (int): The size of the square
         """
@@ -29,18 +29,18 @@ class Square:
 
         Raises:
         TypeError: If the size is not an integer
-        ValueError: If the size is less than 0 
+        ValueError: If the size is less than 0
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        
+
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
     def area(self):
         """This is a method to calculate the area of the square
-        
+
         Returns:
         int: The area of the square
         """
