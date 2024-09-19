@@ -45,11 +45,11 @@ class Square:
         int: The area of the square
         """
         return self.__size ** 2
-    
+
     def my_print(self):
         """This is a method to print in stdout the square
         with the character #
-        
+
         If i is = 0 print empty line
         """
         for i in range(self.__size):
