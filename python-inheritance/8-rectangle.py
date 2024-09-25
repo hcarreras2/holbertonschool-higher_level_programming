@@ -1,38 +1,24 @@
 #!/usr/bin/python3
+"""Define a class that inherits from BaseGeometry"""
 
-"""class named BaseGeometry"""
-
-
-class BaseGeometry:
-    """raises Exception with the message:
-    area() is not implemented"""
-
-    def area(self):
-        """raises an exception"""
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        """validates a value, assumes name is always a string
-        if value is not an integer raise TypeError with message:
-            <name> must be integer
-        if value is <= 0 raise ValueError with message:
-            <name> must be greater than 0"""
-        if not isinstance(value, int) or isinstance(value, bool):
-            raise TypeError(f"{name} must be an integer")
-        if value <= 0:
-            raise ValueError(f"{name} must be greater than 0")
-
-    """Class named BaseGeometry"""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """class Rectangle that inherits from BaseGeometry
-    private instance attribute width and height
-    validates width and height to be positive integers
-    initializes width and height"""
+    """Class that inherits from BaseGeometry.
+
+    Args:
+        BaseGeometry (class): class defined in 5-base_geometry.py.
+    """
+
     def __init__(self, width, height):
-        """initializes width and height"""
-        super().integer_validator("width", width)
-        super().integer_validator("height", height)
+        """_summary_
+
+        Args:
+            width (_type_): _description_
+            height (_type_): _description_
+        """
         self.__width = width
         self.__height = height
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
