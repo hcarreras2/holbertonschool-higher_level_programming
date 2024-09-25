@@ -21,7 +21,10 @@ class BaseGeometry:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
-        
+    
+    """Class named BaseGeometry"""
+
+
 class Rectangle(BaseGeometry):
     """class Rectangle that inherits from BaseGeometry
     private instance attribute width and height
