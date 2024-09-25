@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Function named lookup"""
 
 def lookup(obj):
     """Returns the list of available
