@@ -1,7 +1,7 @@
 #!/bin/usr/python3
 """Abstract class named Animal"""
 
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Animal(ABC):
