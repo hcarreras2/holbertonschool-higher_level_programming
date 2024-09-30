@@ -14,11 +14,13 @@ class Animal(ABC):
 
 class Dog(Animal):
     """Subclass Dog"""
+
     def sound(self):
         return "Bark"
 
 
 class Cat(Animal):
     """Subclass Cat"""
+
     def sound(self):
         return "Meow"
