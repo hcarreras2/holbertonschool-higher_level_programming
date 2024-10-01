@@ -13,7 +13,7 @@ class VerboseList(list):
         super().append(item)
         print("Added [{}] to the list".format(item))
 
-    def extetend(self, item):
+    def extend(self, item):
         """extend method that print a notification message with
         numbers of items added"""
         super().extend(item)
@@ -27,12 +27,12 @@ class VerboseList(list):
         super().remove(item)
         print("Removed [{}] from the list".format(item))
 
-    def pop(self, item):
+    def pop(self, index):
         """
         Before popping the item from the list,
         print a message like “Popped [item] from the list.”
         If the index is not specified, default behavior
         is to pop the last item.
         """
-        super().pop(item)
+        super().pop(index)
         print("Popped [{}] from the list".format(item))
