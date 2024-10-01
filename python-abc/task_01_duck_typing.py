@@ -4,28 +4,28 @@
 from abc import ABC, abstractmethod
 
 
-class Shape(ABC):
-    """Abstract class Shape"""
+    class Shape(ABC):
+        """Abstract class Shape"""
 
-    @abstractmethod
-    def area(self):
-        pass
+        @abstractmethod
+        def area(self):
+            pass
 
-    @abstractmethod
-    def perimeter(self):
-        pass
+        @abstractmethod
+        def perimeter(self):
+            pass
 
 
-class Circle(Shape):
-    """Circle subclass from Shape"""
-    def __init__(self, radius):
-        self.radius = radius
+    class Circle(Shape):
+        """Circle subclass from Shape"""
+        def __init__(self, radius):
+            self.radius = radius
 
-    def area(self):
-        return 3.14 * (self.radius ** 2)
+        def area(self):
+            return 3.14 * (self.radius ** 2)
 
-    def perimeter(self):
-        return 2 * 3.14 * self.radius
+        def perimeter(self):
+            return 2 * 3.14 * self.radius
 
     class Rectangle(Shape):
         """Rectangle subclass that inherits from Shape"""
