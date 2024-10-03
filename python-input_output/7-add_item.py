@@ -9,6 +9,8 @@ from file_manager import save_to_json_file, load_from_json_file
 
 
 def add_item():
+    """Add all arguments to a Python list, and then save them to a file"""
+
     if os.path.exists("add_item.json"):
         items = load_from_json_file("add_item.json")
     else:
