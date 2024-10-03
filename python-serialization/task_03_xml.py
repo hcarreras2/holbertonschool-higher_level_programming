@@ -11,9 +11,9 @@ def serialize_to_xml(dictionary, filename):
     for key, value in dictionary.items():
         child = ET.SubElement(root, key)
         child.text = str(value)
-        tree = ET.ElementTree(root)
-        tree.write(filename)
-        return root
+    tree = ET.ElementTree(root)
+    with open(filename, 'wb') as xml_file:
+        tree.write(xml_file)
 
 def desirialize_from_xml(filename):
     """Deserialize an XML file to a dictionary."""
