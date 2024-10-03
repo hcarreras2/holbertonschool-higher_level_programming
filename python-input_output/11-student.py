@@ -24,4 +24,4 @@ class Student:
         for key, value in json.items():
             setattr(self, key, value)
             return self
-        return self
+
