@@ -34,7 +34,7 @@ def get_user(username):
     if username in users:
         return jsonify(users[username])
     else:
-        return jsonify({"error": "User not found"})
+        return jsonify({"error": "User not found"}), 404
 
 # Define a route to add a new user
 
