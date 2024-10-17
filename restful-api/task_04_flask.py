@@ -6,6 +6,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 # Initialize a dictionary to store users
+users = {}
 users = {
     "jane": {"username": "jane", "name": "Jane", "age": 28, "city": "Los Angeles"},
     "john": {"username": "john", "name": "John", "age": 30, "city": "New York"}
@@ -35,7 +36,7 @@ def get_user(username):
         return jsonify({"error": "User not found"})
 
 # Define a route to add a new user
-@app.route('/add_user', methods=['POST'])
+@app.route('/add_user', methods=['POST']), 404
 def add_user():
     data = request.json
     if 'username' not in data:
