@@ -38,7 +38,7 @@ def get_user(username):
 
 # Define a route to add a new user
 
-@app.route('/add_user', methods=['POST']), 404
+@app.route('/add_user', methods=['POST'])
 def add_user():
     data = request.get_json()
     username = data.get("username")
