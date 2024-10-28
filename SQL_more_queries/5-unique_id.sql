@@ -1,6 +1,5 @@
---  A script that creates the database hbtn_0d_2 and the user user_0d_2.
-
-CREATE DATABASE IF NOT EXIST hbtn_0d2;
-CREATE USER IF NOT EXIST 'user_0d_2'@'localhost' IDENTIFIED BY 'user_0d_2pwd';
-GRANT SELECT ON hbtn_0d_2.* TO 'user_0d_2'@'localhost';
-FLUSH PRIVILEGES;
+-- A script that creates the table unique_id.
+CREATE TABLE IF NOT EXISTS unique_id (
+    id INT UNIQUE DEFAULT 1,
+    name VARCHAR(256)
+);
